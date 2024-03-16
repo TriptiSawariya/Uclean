@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uclean</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      border: border-box;
+      font-family: "All Round Gothic" !important;
+
+    }
+
+    nav {
+      width: 100%;
+      height: 100px;
+      padding: 0px 50px;
+      line-height: 70px;
+      background-color: white;
+      margin-top: -100px;
+      position: fixed;
+
+
+    }
+
+    .logo {
+      float: left;
+      margin: 15px 20px;
+    }
+
+    nav ul {
+      float: right;
+      margin: 0px 80px;
+
+    }
+
+    nav ul li {
+      display: inline-block;
+      cursor: pointer;
+      list-style: none;
+      padding: 0px 10px;
+
+
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      text-align: right;
+      color: grey;
+      font-size: 19px;
+      padding: 0px 5px;
+    }
+
+    button {
+      border-radius: 9px;
+      padding: 9px;
+      color: black;
+
+    }
+
+    .button1 {
+      background-color: rgb(49, 110, 81);
+      border: none;
+      padding-left: 130px;
+      padding-right: 130px;
+      margin: 0px 560px;
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 55px;
+      color: white;
+      margin-top: 100px;
+      padding-top: 150px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    }
+
+    .background {
+      margin-top: 20px;
+      background-image: url(https://assets.ucleanlaundry.com/home-page-try.webp);
+      background-position: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      position: relative;
+      background-color: rgba(207, 207, 207, 0.996);
+
+    }
+
+    h3 {
+      font-size: 35px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    div.border {
+      margin-left: 25px;
+      text-align: center;
+      float: left;
+      flex-direction: row;
+      border-radius: 12px;
+      box-shadow: 0 2px 1px 0;
+      border: 1px solid rgb(237, 244, 235);
+      box-shadow: 2px 2px 0px 2px rgb(237, 240, 234);
+    }
+
+    div.border:hover {
+      border: 2px solid rgb(241, 240, 240);
+      box-shadow: 0 6px 16px 0
+    }
+
+    div.border img {
+      border-radius: 12px 12px 0 0;
+    }
+
+    .services {
+      color: rgb(15, 85, 45);
+      font-size: 27px;
+    }
+
+    .learn {
+      font-size: 20px;
+      color: rgb(37, 121, 149);
+    }
+
+    .heading {
+      background-color: rgb(236, 251, 250);
+      margin-top: 600px;
+      margin-bottom: 5%;
+      font-size: 35px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 25%;
+      padding-right: 25%;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .reason-left {
+      border: 1px solid transparent;
+      text-align: center;
+      margin-top: 2rem;
+      margin-left: 29rem;
+      float: left;
+      display: flex;
+    }
+
+    .reason-right {
+      text-align: center;
+      display: flex;
+      border: 1px solid transparent;
+      margin-top: 2rem;
+      margin-right: 30rem;
+      float: right;
+    }
+
+    .Download-App {
+      margin: 300px 60px 150px 60px;
+      padding: 0 0 0 0px;
+      border: 0;
+      outline: 0;
+      font-size: 85px;
+      background-color: #65BA0D;
+      ;
+      transform: skewy(-10deg);
+      position: relative;
+      border-top-left-radius: 70px;
+      border-top-right-radius: 70px;
+      border-bottom-left-radius: 64%;
+      color: rgb(253, 248, 248);
+
+    }
+
+    .mobiles {
+      margin-left: 150px;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      float: left;
+      transform: skew(0, 9deg);
+      padding-bottom: 0px;
+      z-index: -2;
+      margin-top: 0px;
+    }
+
+    .mobile1 {
+      position: absolute;
+      width: 200px;
+      left: 16%;
+      margin-top: -155px;
+      z-index: 2;
+      margin-right: 20px;
+    }
+
+    .mobile2 {
+      position: absolute;
+      width: 200px;
+      margin-top: -35px;
+      margin-left: 240px;
+      margin-bottom: 0px;
+      z-index: 2;
+    }
+
+    .cover-skew {
+      height: 200px;
+      width: 100%;
+      background-color: #65BA0D;
+      ;
+      position: absolute;
+      top: 190px;
+      transform: skew(0, 9deg);
+      left: 0;
+      right: 0;
+      z-index: -1;
+      border-bottom-left-radius: 70px;
+      border-bottom-right-radius: 70px;
+      padding-bottom: 30px;
+
+    }
+
+    .container {
+      line-height: 1.5em;
+      font-size: 22px;
+      padding-top: 3px;
+      padding-bottom: 5px;
+      padding-left: 650px;
+      padding-right: 150px;
+      text-align: right;
+      transform: skew(0, 9deg);
+
+
+    }
+
+    .icon {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      transform: skew(0, 1deg);
+
+    }
+
+    .customer-speak {
+
+      background-color: #e0edd6;
+      padding-left: 114px;
+      padding-bottom: 180px;
+      text-align: center;
+      padding-top: 50px;
+      padding-right: 114px;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 30px;
+      position: absolute;
+      color: rgb(15, 85, 45);
+
+    }
+
+    .opinion {
+      box-sizing: border-box;
+      border: 2px solid white;
+      background-color: white;
+      margin-left: 20px;
+      margin-top: 90px;
+      height: 430px;
+      width: 410px;
+      flex-direction: column;
+      line-height: 1.8em;
+      float: left;
+      display: flex;
+      text-align: center;
+      padding: 70px 50px 50px 50px;
+      word-spacing: 0.1em;
+      border-radius: 10px;
+      font-size: 16px bold;
+      position: relative;
+
+    }
+
+    .photo {
+      height: 75px;
+      width: 75px;
+      text-align: center;
+      margin-left: 120px;
+      border-radius: 50%;
+      border: 6px solid rgb(20, 169, 20);
+      margin-top: -110px;
+    }
+
+    .photo:hover {
+      border: 6px solid rgb(150, 200, 23);
+    }
+
+    .opinion:hover {
+      box-shadow: 5px 1px 5px 5px rgb(190, 195, 182);
+    }
+
+    .star {
+
+      display: inline-block;
+      margin: 1px 2px;
+      color: #fdb51c;
+    }
+
+    .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .customer-about {
+      padding-top: 0px;
+      line-height: 0px;
+      margin: 8px;
+      font-size: 15px;
+
+    }
+
+    .customer {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 20px;
+      color: rgb(15, 85, 45);
+    }
+
+    .latest-blog {
+      margin-top: 75%;
+      color: rgb(9, 56, 30);
+      font-size: 40px;
+    }
+
+    .blogs {
+      box-sizing: border-box;
+      margin-bottom: 35px;
+      margin-left: 30px;
+      width: 550px;
+      border: 3px solid rgb(240, 246, 243);
+      border-radius: 15px;
+      float: right;
+      margin-right: 230px;
+      font-size: 18px;
+      box-shadow: 5px 5px 5px 5px rgb(245, 245, 245);
+      text-align: justify;
+
+    }
+
+    .blog-image {
+      width: 240px;
+      height: 240px;
+      float: left;
+      margin: 0px;
+      padding-right: 10px;
+      border-radius: 15px 0px 0px 15px;
+    }
+
+    .learn-more {
+      color: #65BA0D;
+      float: right;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 30px;
+      font-size: 15px;
+      background-color: white;
+    }
+
+    .cities {
+      margin-top: 650px;
+      color: rgb(9, 57, 31);
+      margin-bottom: 100px;
+    }
+
+    .locat {
+      margin-left: 250px;
+      margin-right: 250px;
+      margin-bottom: 700px;
+    }
+
+    .locat_sec {
+      width: 10%;
+      float: left;
+      padding: 0 25px;
+      margin-left: 5px;
+      margin-right: 5px;
+      display: flex;
+    }
+
+    .locat_sec li {
+      list-style: none;
+      margin-bottom: 25px;
+      padding-left: 0px;
+      position: relative;
+      font-size: 15px;
+      color: #161616;
+      cursor: pointer;
+    }
+
+    .footer {
+      margin-top: 5em 0px 0px 0px;
+      background-color: rgb(13, 84, 54);
+      color: white;
+      padding: 50px 158px 10px 158px;
+      font-size: 16px;
+      float: left;
+      text-align: left;
+
+    }
+
+    .footer1 {
+      float: left;
+      list-style: none;
+      padding: 50px 20px 30px 0px;
+      line-height: 1.5em;
+      text-align: left;
+    }
+
+    .footer2 {
+      float: left;
+      list-style: none;
+      padding: 0px 30px 30px 30px;
+      line-height: 1.5em;
+      text-align: left;
+
+    }
+
+    .footer3 {
+      float: left;
+      ;
+      list-style: none;
+      padding: 0px 30px 30px 30px;
+      line-height: 1.5em;
+      text-align: left;
+    }
+
+    .footer4 {
+      float: left;
+      list-style: none;
+      padding: 0px 30px 30px 30px;
+      line-height: 1.5em;
+      text-align: left;
+
+    }
+
+    .footer5 {
+      float: left;
+      list-style: none;
+      padding: 0px 20px 30px 30px;
+      line-height: 1.5em;
+      text-align: left;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <div class="logo"><img src="https://assets.ucleanlaundry.com/assets/images/logo.png" alt=""></div>
+      <ul>
+        <li><a href="#" style="color: rgb(71, 200, 12);text-decoration: underline rgb(7, 179, 7);">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Franchise</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing List</a>
+        </li>
+        <li><button><a href="#" style="color: black;">Login/Signup</a></button></li>
+        <li><button style="background-color:#053c26;"><a href="#"
+              style="color: white; background-color:#053c26;">Franchise</a></button></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="background">
+    <h1>Find your nearest Laundromat!</h1>
+    <button class="button1">Order Now</button>
+    <div style="text-align:center;      padding:10px;">
+      <img src="https://assets.ucleanlaundry.com/assets/img/whatsappicon.png" alt="what's app" height="50px"
+        width="50px">
+      <img src="https://assets.ucleanlaundry.com/assets/img/appleicon.png" alt="apple" height="50px" width="50px">
+      <img src="https://assets.ucleanlaundry.com/assets/img/playstoreicon.png" alt="playstore" height="50px"
+        width="50px">
+    </div>
+    <h4
+      style="text-align: center;color: white; font-size: 15px;padding-top: 2px;margin-top: 0px;padding-bottom: 100px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      Place your Order Now</h4>
+  </div>
+  <h3>OUR SERVICES</h3>
+  <div style="padding-left: 117px;">
+    <div class="border">
+
+      <img src="ucl(4).png" alt="" height="250px" width="400px">
+
+      <h4 class="services"><b>DRY CLEANING</b></h4>
+      <p>Eco friendly | Expert Stain Removal</p>
+      <p class="learn">learn more</p>
+    </div>
+    <div class="border">
+      <img src="ucl(5).png" alt="" height="250px" width="400px">
+      <H4 class="services"><b>LAUNDRY BY KG</b></H4>
+      <P>Wash & Iron | Wash & Fold</P>
+      <p class="learn">learn more</p>
+    </div>
+    <div class="border">
+      <img src="ucl(6).png" alt="" height="250px" width="400px">
+      <h4 class="services"><b>PREMIUM LAUNDRY</b></h4>
+      <p>Economical | Personalized Care</p>
+      <p class="learn">learn more</p>
+    </div>
+  </div>
+
+  <div class="heading">
+    <h2>INDIA’S NO. 1 LAUNDRY & DRY-CLEANING BRAND FROM AN IITIAN</h2>
+    <ul>
+
+  </div>
+  <h2>WHY UCLEAN?</h2>
+  <div style="margin-bottom: 50px; margin-top: 50px;">
+    <div>
+      <div class="reason-left">
+        <p> QUICK SERVICE</p><img src="https://assets.ucleanlaundry.com/assets/images/QUICK_SERVICE_11zon.webp" alt=""
+          width="70px">
+      </div>
+      <div class="reason-right">
+        <img src="https://assets.ucleanlaundry.com/assets/images/PROFESSIONAL_CLEANING_11zon.webp" alt="" width="70px">
+        <p>PROFESSIONAl <br> CLEANING</p>
+      </div>
+
+    </div>
+    <div>
+      <div class="reason-left" style="margin-left: 22rem;">
+        <p>DOORSTEP PICK <br>
+          UP AND DROP</p>
+        <img src="https://assets.ucleanlaundry.com/assets/images/DOORSTEP_PICK_UP_AND_DROP_11zon.webp" alt=""
+          width="70px">
+      </div>
+      <div class="reason-right" style="margin-right: 23rem; margin-top: 2.5rem;">
+        <img src="https://assets.ucleanlaundry.com/assets/images/GREEN_CERTIFIED_DETERGENTS_11zon.webp" alt=""
+          width="70px">
+        <p>GREEN-CERTIFIED <br>
+          DETERGENTS</p>
+      </div>
+
+    </div>
+    <div>
+      <div class="reason-left" style="margin-left: 16rem; margin-top: 4rem;">
+        <p>AFFORDABLE PER <br>
+          KILO PRICING</p>
+       <img src="https://assets.ucleanlaundry.com/assets/images/affordable_per_kilo_pricing_11zon.webp" alt=""
+          width="70px">
+      </div>
+      <div>
+         <img src="https://assets.ucleanlaundry.com/assets/images/center_logo_11zon.webp" alt="" width="370px"style="text-align: center; margin-top:3rem;"></div>
+      <div class="reason-right" style="margin-right: 15rem; margin-top: -13.5rem;">
+        <img src="https://assets.ucleanlaundry.com/assets/images/ONDEMAND_EXPRESS_SERVICE_AVAILABLE_.webp" alt=""width="70px">
+        <p>ON-DEMAND <br>
+          SERVICE ALSO AVAILABLE</p>
+      </div>
+    </div>
+    <div>
+      <div class="reason-left" style="margin-left: 20.6rem; margin-top: -4.6rem; margin-bottom: 2rem;">
+        <p>STATE-OF-THE-ART <br>
+          TECHNOLOGY</p>
+        <img src="https://assets.ucleanlaundry.com/assets/images/STATE_OF_THE_ART_TECHNOLOGY_11zon.webp" alt=""
+          width="70px">
+      </div>
+      <div class="reason-right" style="margin-right: 22rem; margin-top: -4.6rem; margin-bottom: 2rem;">
+        <img src="https://assets.ucleanlaundry.com/assets/images/100_SANITIZED_and_MACHINE_DRY_11zon.webp" alt=""
+          width="70px">
+        <p>100% SANITIZED <br>
+          CLOTHES</p>
+      </div>
+    </div>
+    <div>
+      <div class="reason-left" style="margin-left: 26rem;">
+        <p>WE SAVE WATER WITH <br>
+          EVERY WASH</p>
+        <img src="https://assets.ucleanlaundry.com/assets/images/WE_SAVE_WATER-WITH_EVERY_WASH_CYCLE_11zon.webp" alt=""width="70px">
+      </div>
+
+      <div class="reason-right" style="margin-right: 26rem; margin-top: 1rem;">
+        <img src="https://assets.ucleanlaundry.com/assets/images/CUSTOM_PACKAGING_FOLD_OR_HANGI.png" alt=""width="70px">
+        <p>CUSTOM PACKAGING <br>
+          FOLD OR HANG!</p>
+      </div>
+    </div>
+    <div class="Download-App">
+      <div class="mobiles">
+        <img src="https://assets.ucleanlaundry.com/assets/img/mobile1_11zon.webp" alt="" width="200px" class="mobile1">
+        <img src="https://assets.ucleanlaundry.com/assets/img/mobile2_11zon.webp" alt="" width="200px" class="mobile2">
+        <div class="cover-skew"></div>
+      </div>
+      <div class="container">
+        <div class="d-app">
+          <h2 style="font-size: 40px;">Download UClean App</h2>
+        </div>
+        <p>Upgrade your laundry experience with our <span style="color: black;">new app!</span> Get the convenience of
+          easy scheduling, real-time updates, and <span style="color: black;">free pick-up and drop-off</span> at your
+          doorstep. No more hassle of traditional laundry services - with just a few taps, you can have your clothes
+          cleaned and returned to you in no time. Download now and enjoy a stress-free laundry routine.
+
+        </p>
+
+        <div class="icon">
+          <img src="https://assets.ucleanlaundry.com/assets/img/playstore.png" alt="" width="200px"> OR <img src="https://assets.ucleanlaundry.com/assets/img/app-store.png" alt="" width="200px">
+
+        </div>
+      </div>
+      <div class="cover-skew"></div>
+    </div>
+    <div class="customer-speak">
+      <h2>
+        CUSTOMER SPEAK
+      </h2>
+      <p style="margin-left: 270px; margin-right: 270px; color: black;">
+        UClean is the highest rated and most searched Laundry and Dry-Cleaning brand in India!
+        Still not sure? Here is a glimpse of our raving reviews!
+      </p>
+      <div class="opinion">
+        <img src="https://assets.ucleanlaundry.com/assets/images/cust_img_1_11zon.webp" alt="customer-image" class="photo">
+        <p>
+          Gave Up on my 15 years old "dry cleaners" for U Clean. Excellent seveice, Courteous staff , super sonic
+          delivery. feel pampered. A yes, not to forget the competitive rates. A definite recommened. Get your clothes U
+          cleaned. I'm loving it.
+        </p>
+        
+        </ul>  
+        <h4 class="customer">ARVINDER LAMBA</h4>
+        <p class="customer-about">(Entrepreneur, Delhi)</p>
+      </div>
+      <DIV class="opinion">
+        <img src="https://assets.ucleanlaundry.com/assets/images/cust_img_2_11zon.webp" alt="customer-image" class="photo">
+        <p>
+          The best laundry services I ever got! The manager , Yash, was very good at communication and they delivered
+          the clothes within a day! Also got some discount on the bulk order. Thanks to the team. cheers! keep up the
+          good work
+        </p>
+        <h4 class="customer">NIKIL KATARIYA</h4>
+        <p class="customer-about" style="padding-top: 0px;">(Student, Pune)</p>
+      </DIV>
+      <div class="opinion">
+        <img src="https://assets.ucleanlaundry.com/assets/images/cust_img_3_11zon.webp" alt="customer-image" class="photo">
+        <p>
+          For someone who has a young daughter, a clean home is an absolute necessity for me. I started with Uclean as
+          my laundry and dry-cleaning service provided. But they wooed me their excellent service, and now they are my
+          one -step shop for cleaning requirements. I am a customer for life.
+        </p>
+        <h4 class="customer">CHITRA JOHRI</h4>
+        <p class="customer-about">(Vise President, Bradford License India)</p>
+      </div>
+    </div>
+    <h2 class="latest-blog">LATEST BLOGS</h2>
+    <p style="font-size: 20px; padding-bottom: 60px;text-align: center;">Stay updated with the best of garment and home
+      cleaning</p>
+    <div class="border"
+      style="width: 420px;margin-left: 230px; padding-top: 10px;height: 520px;padding-left: 22px;padding-right: 22px;text-align: left;">
+      <img src="https://uclean.in/blog_images/1670319786-Arunabh.jpeg" alt="founder of Uclean" width="260px" style="padding-left: 70px;">
+      <h5 style="color:rgb(58, 165, 25); font-size: 16px;margin-right: 220px;">2022-12-06 09:43:06</h5>
+      <h4 style="color: rgb(11, 81, 41); font-size: 18px;">ARUNABH SINHA, FOUNDER OF UCLEAN, BATTLES IT OUT AT INDIA'S
+        BIGGEST BUSINESS REALITY SHOW ON TIMES NOW</h4>
+      <p>Watch the show on Saturday (20 July, 2018) at 9.30 a.m. and Sunday (21 July 2018) at 11.30 am to catch Mr.
+        Arunabh Sinha, founder of UClean, battle it out with other</p>
+      <h5 class="learn-more"><b><u>Learn More</u></b></h5>
+
+    </div>
+    <div>
+      <div class="blogs">
+        <img src="https://uclean.in/blog_images/1669721192-UP%20YOUR%20LIVING%20STANDARD,%20ON%20A%20BUDGET!.png" alt="" class="blog-image">
+        <h5 style="color:rgb(58, 165, 25); font-size: 16px;">2022-11-29 11:26:32</h5>
+        <h4 style="padding-left: 20px;padding-right: 20px;padding-bottom: 0px; padding-top: 0px;margin: 0px;">UP YOUR
+          LIVING STANDARD, ON A BUDGET!</h4>
+        <p style="padding-left: 25px;padding-right: 25px;padding-top: 0px;margin: 10px;">Ever looked at magazines and
+          wished you could live like that too? Being low on budget is </p>
+        <h5 class="learn-more"><b><u>Learn More</u></b></h5>
+      </div>
+      <div class="blogs" style="width: 550px;">
+        <img src="https://uclean.in/blog_images/1669720968-STYLING%20TIPS%20FOR%20MEN.png" alt="" class="blog-image">
+        <h5 style="color:rgb(58, 165, 25); font-size: 16px;">2022-11-29 11:22:48</h5>
+        <h4 style="padding-left: 20px;padding-right: 20px;padding-bottom: 0px; margin: 0px;">STYLING TIPS FOR MEN</h4>
+        <p style="padding-left: 25px;padding-right: 25px;padding-top: 0px; margin: 10px;">Following the fashion trend
+          and dressing well is a skill. Like other skills you can improve and upgrade anytime. Here are few tips which
+          will</p>
+        <h5 class="learn-more"><b><u>Learn More</u></b></h5>
+      </div>
+    </div>
+    <h2 class="cities">CITIES WE DELIVER TO
+    </h2>
+    <div class="locat">
+      <div class="locat_sec">
+        <img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px" height="20px">
+        <li><i class="fa-location-arrow"></i>Aalo</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Ahmedabad</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Alwar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Alwar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Alwarx</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Amravate</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bahadurgarh</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bahraich</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bareilly</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bathinda</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Belgaum</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bengaluru</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bettiah</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bhilwara</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bhiwadi</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bhopal</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bhubaneshwar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bidar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bikaner</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Bokaro</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Bongaigaon</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Chandigarh</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Chennai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Chitrakoot</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Cochin</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Coimbatore</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Danapur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Darrang</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Dehradun</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Delhi </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Deoghar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Dhanbad</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Dhule</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Dibrugarh</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Digboi</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Duliajan</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>ellenabad</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>erode</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Faridabad</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Gandhinagar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Ghaziabad</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Goa</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Gorakhpur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Gurugram</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Guwahati</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Haldwani</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Hamirpur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Hanumangarh</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Hojai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Howrah</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Hubli</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Hyderabad</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Indore</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Itanagar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jagdalpur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jagraon</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jaipur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jaipur - Select</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jammu</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jamshedpur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Jorhat</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kanpur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kargil</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Karimganj</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kathmandu</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kharupetia</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kohima</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kokrajhar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kolhapur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kolkata</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Krishnanagar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Kurnool</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Latur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Leh </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Lower Subansiri</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Lucknow</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Ludhiana</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>madurai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Mangaldoi</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Mangalore</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Margher</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Meerut </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Mohali</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Moran</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Motihari</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Mumbai - Select</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Munger</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Mysore</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Nadia</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Nagaon </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Nagpur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Naharlagun</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Nainital</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Navi Mumbai</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Neemrana</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Nirjuli</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Nohar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Noida</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Panchkula</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Panipat</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Pasighat</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Patiala</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Patna </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Prayagraj</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Pune</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Purnia</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Raichur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Raipur</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Rajahmundy</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Ranchi</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Roing</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Shillong </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Shimla</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Silchar </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Sitamarhi </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Sivasagar </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Siwan</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Sriganganagar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Srinagar</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Surat</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Tezpur </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Thane</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Tinsukia</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Tura </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Vagamon</li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li>Vidisha </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Zirakpur </li>
+      </div>
+      <div class="locat_sec"><img src="https://static.thenounproject.com/png/144744-200.png" alt="" width="20px"
+          height="20px">
+        <li> Ziro</li>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer1">
+        <img src="https://assets.ucleanlaundry.com/assets/images/logo.png" alt="">
+        <p>UClean is India's largest Laundry & Dry <br> Cleaning Chain with over 300+ stores <br> spread across 85+
+          cities. we are also <br> India's highest rated laundry brand.</p>
+      </div>
+      <div class="footer2">
+
+        <h3 style="font-size: 20px;padding-left: 0px;"> OUR SERVICES</h3>
+        <li>Dry Cleaning</li>
+        <li>Laundry by Kg</li>
+        <li> Premium Laundry</li>
+        <li>Steam Ironing</li>
+        <li> Shoe Cleaning</li>
+        <li> Bag Cleaning</li>
+        <li>Curtain Cleaning</li>
+        <li>Sofa Cleaning</li>
+        <li>Carpet Cleaning</li>
+      </div>
+      <div class="footer3">
+        <h3 style="font-size: 20px;padding-left: 0px;">PAGES</h3>
+        <li>Locate us</li>
+        <li>Blog</li>
+        <li>Career</li>
+        <li>Media</li>
+        <li>Privacy Policy</li>
+        <li>T&C</li>
+        <li>COVID-19</li>
+      </div>
+      <div class="footer4">
+        <h3 style="font-size: 20px;padding-left: 0px;">CONTACT US</h3>
+        <p> <i class="fa fa-map-marker" aria-hidden="true" style="padding: 6px;"> </i>Unit No. 114 & 115 Charm wood <br> Plaza, Charm wood Village, Eros <br>Garden, Suraj Kund, Faridabad,<br>
+          Haryana - 121009, India</h4>
+
+          <li><i class="fa fa-phone" aria-hidden="true" style="padding: 6px;"></i>+91 9999759911</li>
+          <li><i class="fa fa-envelope" aria-hidden="true" style="padding: 6px;"></i>support@uclean.in</li>
+      </div>
+      <div class="footer5">
+        <h3 style="font-size: 20px;padding-left: 0px;">FOLLOW US</h3>
+        <img src="ucl(42).png" alt="" width="40px"><img src="ucl(46).png" alt="" width="46px"><img
+          src="linkedin-logo-png-2026.png" alt="" width="45px"><img src="insta.avif" alt="" width="40px"><img
+          src="ucl(44).png" alt="" width="44px">
+        <li>Download the App</li>
+        <img src="https://assets.ucleanlaundry.com/assets/img/whatsappicon.png" alt="" width="60px"><img src="https://assets.ucleanlaundry.com/assets/img/appleicon.png" alt="" width="60px"><img src="https://assets.ucleanlaundry.com/assets/img/playstoreicon.png" alt=""
+          width="60px">
+      </div>
+      <hr style="margin-top: 400px;">
+      <div style="margin-top: 30px;">
+        <div>
+          <p>&copy 2022 UClean. All rights reserved</p>
+        </div>
+        <div>
+          <p style="float: right; margin-top: -30px;">Privacy Policy| Terms and conditions</p>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
